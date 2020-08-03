@@ -29,6 +29,11 @@ export const TopBar = styled.div`
 
   color: var(--color-text-in-primary);
 
+  div.react-toggle {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
   > img {
     height: 1.6rem;
   }

@@ -15,7 +15,7 @@ const Teacher: React.FC = () => {
 
         <div>
           <strong>Stefano Saffran</strong>
-          <span>Matemática</span>
+          <span>Química</span>
         </div>
       </header>
 

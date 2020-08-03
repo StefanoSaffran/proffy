@@ -5,16 +5,16 @@
 <br />
 
 <h2 align="center">
-   ♻️ NextLevelWeek 2.0 ♻️
+   📚 NextLevelWeek 2.0 📚
 </h2>
 
 <p align="center">
-  <img alt="Project programing languages count" src="https://img.shields.io/github/languages/count/StefanoSaffran/proffy?color=8257E5">
-   <img alt="Repository size" src="https://img.shields.io/github/repo-size/StefanoSaffran/proffy?color=8257E5">
-  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/StefanoSaffran/proffy?color=8257E5">
-  <img alt="Made by Stefano" src="https://img.shields.io/badge/made%20by-StefanoSaffran-%20?color=8257E5">
-  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/StefanoSaffran/proffy?color=8257E5">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/StefanoSaffran/proffy?color=8257E5">
+  <img alt="Project programing languages count" src="https://img.shields.io/github/languages/count/StefanoSaffran/proffy?color=6842C2">
+   <img alt="Repository size" src="https://img.shields.io/github/repo-size/StefanoSaffran/proffy?color=6842C2">
+  <img alt="Last commit on GitHub" src="https://img.shields.io/github/last-commit/StefanoSaffran/proffy?color=6842C2">
+  <img alt="Made by Stefano" src="https://img.shields.io/badge/made%20by-StefanoSaffran-%20?color=6842C2">
+  <img alt="Project top programing language" src="https://img.shields.io/github/languages/top/StefanoSaffran/proffy?color=6842C2">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/StefanoSaffran/proffy?color=6842C2">
 </p> 
 
 <p align="center">

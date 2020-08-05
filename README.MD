@@ -19,6 +19,7 @@
 
 <p align="center">
   <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#rocket-built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
   </p>
@@ -28,6 +29,87 @@
 ## :computer: Project 
 
  Proffy is an application that aims helping to bring together people who need help in some subject with those who like to teach.
+
+ ## :rocket: Built with
+
+This project was developed with the following technologies:
+
+<details>
+  <summary>Backend</summary>
+
+-   [Node.js](https://nodejs.org/)
+-   [Express](https://expressjs.com/)
+-   [TypeORM](https://typeorm.io/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [TS-Node-Dev](https://www.npmjs.com/package/ts-node-dev)
+-   [Tsyringe](https://github.com/microsoft/tsyringe)
+-   [uuidv4](https://www.npmjs.com/package/uuidv4)
+-   [Cors](https://www.npmjs.com/package/cors)
+-   [ESLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [VS Code](https://code.visualstudio.com/)
+
+</details>
+
+## :information_source: How to run
+
+### Requirements
+
+To run the application you will need:
+* [Git](https://git-scm.com)
+* [Node](https://nodejs.org/)
+* [Yarn](https://yarnpkg.com/) 
+
+I strongly recommend using [Docker](https://www.docker.com/) to run the databases.
+<br>
+If you decide to use docker, follow this steps to install and run the docker image.
+
+```bash
+# install Postgres image (if you don't specify an username it will be postgres by default)
+$ docker run --name imagename -e POSTGRES_PASSWORD=yourPassword -p 5432:5432 -d postgres
+
+# start Postgres
+$ docker start imageName
+
+```
+### Backend
+
+Now clone the repository and install the dependencies.
+```bash
+# to clone the repository
+$ git clone https://github.com/StefanoSaffran/proffy.git
+
+# go into the backend folder
+$ cd proffy/backend
+
+#install the backend dependencies
+$ yarn
+
+```
+In order to connect to the database, you will need to enter the access informations into a ormconfig.json. You can find more about it [here](https://typeorm.io/#/using-ormconfig).
+
+```bash
+# run migrations
+$ yarn typeorm migration:run
+
+# run api
+$ yarn dev:server
+```
+
+### Frontend
+
+```bash
+# in another tab of the terminal install the frontend dependencies and run it 
+$ cd frontend
+$ yarn
+$ yarn start
+```
+
+### Mobile
+
+## :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/StefanoSaffran/proffy/blob/master/LICENSE) for more information
 
 ## :mailbox_with_mail: Get in touch!
 

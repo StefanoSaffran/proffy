@@ -7,8 +7,9 @@ export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
-  color: var(--color-text-in-primary);
+  color: var(--color-text-base);
   background: var(--color-primary);
 `;
 
@@ -25,10 +26,10 @@ export const LogoContainer = styled.div`
     font-size: 2.4rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
+    color: var(--color-text-in-primary);
   }
 
   @media (min-width: 1100px) {
-    grid-area: logo;
     align-self: center;
     margin: 0;
     text-align: left;
@@ -46,10 +47,34 @@ export const LogoContainer = styled.div`
 
 export const LandingImage = styled.img`
   width: 100%;
+  max-height: 30rem;
 
   @media (min-width: 1100px) {
-    grid-area: hero;
     justify-self: end;
+    max-height: 35rem;
+  }
+`;
+
+export const Header = styled.div`
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+`;
+
+export const Footer = styled.div`
+  width: 100%;
+  height: 40%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: ${({ theme }) => theme.colors.colorBackground};
+
+  @media (min-width: 1100px) {
   }
 `;
 
@@ -60,7 +85,7 @@ export const ButtonWrapper = styled.div`
   margin: 3.2rem 0;
 
   a {
-    width: 30rem;
+    width: 28.2rem;
     height: 10.4rem;
     border-radius: 0.8rem;
     font: 700 2rem Archivo;
@@ -97,7 +122,6 @@ export const ButtonWrapper = styled.div`
   }
 
   @media (min-width: 1100px) {
-    grid-area: buttons;
     justify-self: flex-start;
 
     a {
@@ -106,19 +130,38 @@ export const ButtonWrapper = styled.div`
   }
 `;
 
-export const Connections = styled.span`
+export const Connections = styled.div`
+  flex: 1;
+
   font-size: 1.4rem;
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
-  img {
-    margin-left: 0.8rem;
+  > p {
+    width: 70%;
+
+    > span {
+      display: block;
+    }
+  }
+
+  > span {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0;
+    text-align: right;
+
+    > img {
+      margin-left: 0.8rem;
+    }
   }
 
   @media (min-width: 1100px) {
-    grid-area: total;
-    justify-self: end;
+    > span {
+      justify-self: end;
+      margin: 0 4rem;
+    }
   }
 `;

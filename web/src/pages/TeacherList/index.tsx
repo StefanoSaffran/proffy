@@ -28,8 +28,6 @@ const TeacherList: FC = () => {
 
       <Main>
         <Teacher />
-        <Teacher />
-        <Teacher />
       </Main>
     </Container>
   );

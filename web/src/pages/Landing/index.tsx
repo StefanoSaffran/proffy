@@ -14,6 +14,8 @@ import {
   Wrapper,
   LogoContainer,
   LandingImage,
+  Header,
+  Footer,
   ButtonWrapper,
   Connections,
 } from './styles';
@@ -21,31 +23,42 @@ import {
 const Landing: React.FC = () => {
   return (
     <Wrapper>
-      <Container page="landing">
-        <LogoContainer>
-          <img src={logo} alt="Proffy" />
-          <h2>Sua plataforma de estudos online.</h2>
-        </LogoContainer>
+      <Header>
+        <Container page="landing">
+          <LogoContainer>
+            <img src={logo} alt="Proffy" />
+            <h2>Sua plataforma de estudos online.</h2>
+          </LogoContainer>
 
-        <LandingImage src={landingLogo} alt="Study plataform" />
+          <LandingImage src={landingLogo} alt="Study plataform" />
+        </Container>
+      </Header>
+      <Footer>
+        <Container page="landing">
+          <Connections>
+            <p>
+              <span>Seja bem-vindo.</span>
+              <strong>O que deseja fazer?</strong>
+            </p>
+            <span>
+              Total de 200 conexões já realizadas
+              <img src={purpleHeartIcon} alt="Purple Heart" />
+            </span>
+          </Connections>
 
-        <ButtonWrapper>
-          <Link to="/study">
-            <img src={studyIcon} alt="Study" />
-            Estudar
-          </Link>
+          <ButtonWrapper>
+            <Link to="/study">
+              <img src={studyIcon} alt="Study" />
+              Estudar
+            </Link>
 
-          <Link to="/give-classes">
-            <img src={giveClassesIcon} alt="Teach" />
-            Dar aulas
-          </Link>
-        </ButtonWrapper>
-
-        <Connections>
-          Total de 200 conexões já realizadas
-          <img src={purpleHeartIcon} alt="Purple Heart" />
-        </Connections>
-      </Container>
+            <Link to="/give-classes">
+              <img src={giveClassesIcon} alt="Teach" />
+              Dar aulas
+            </Link>
+          </ButtonWrapper>
+        </Container>
+      </Footer>
     </Wrapper>
   );
 };

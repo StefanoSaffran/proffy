@@ -13,5 +13,6 @@ export default {
     colorButtonText: '#FFFFFF',
     colorBoxBase: '#FFFFFF',
     colorBoxFooter: '#FAFAFC',
+    iconsColor: '#333',
   },
 };

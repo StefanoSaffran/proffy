@@ -1,41 +1,49 @@
-import React from 'react';
+import React, { FC, useCallback } from 'react';
 
 import whatsappIcon from '../../assets/icons/whatsapp.svg';
+import { IInfosClasses } from '../../pages/TeacherList';
 
 import { Container } from './styles';
+import api from '../../services/api';
 
-const Teacher: React.FC = () => {
+interface IProps {
+  teacher: IInfosClasses;
+}
+
+const Teacher: FC<IProps> = ({ teacher }) => {
+  const handleCreateNewConnection = useCallback(() => {
+    api.post('connections', {
+      user_id: teacher.user.id,
+    });
+  }, [teacher.user]);
+
   return (
     <Container>
       <header>
-        <img
-          src="https://avatars0.githubusercontent.com/u/34041575?s=460&u=56336a7461a823175e18fb46f36d6d1bad0a4110&v=4"
-          alt="Stefano Saffran"
-        />
+        <img src={teacher.user.avatar} alt={teacher.user.name} />
 
         <div>
-          <strong>Stefano Saffran</strong>
-          <span>Química</span>
+          <strong>{teacher.user.name}</strong>
+          <span>{teacher.subject}</span>
         </div>
       </header>
 
-      <p>
-        Entusias das melhores tecnologias de matemática avançada.
-        <br />
-        <br />
-        Apaixonado por explodir coisas em laboratório e por mudar a vida das
-        pessoas através de experiências.
-      </p>
+      <p>{teacher.user.bio}</p>
 
       <footer>
         <p>
           Preço:
-          <strong>R$ 80,00</strong>
+          <strong>R$ {teacher.cost}</strong>
         </p>
-        <button type="button">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          onClick={handleCreateNewConnection}
+          href={`https://wa.me/${teacher.user.whatsapp}`}
+        >
           <img src={whatsappIcon} alt="Whatsapp" />
           Entrar em contato
-        </button>
+        </a>
       </footer>
     </Container>
   );

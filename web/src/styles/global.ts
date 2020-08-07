@@ -24,7 +24,7 @@ export default createGlobalStyle`
     --color-button-text: ${({ theme }) => theme.colors.colorButtonText};
     --color-box-base: ${({ theme }) => theme.colors.colorBoxBase};
     --color-box-footer: ${({ theme }) => theme.colors.colorBoxFooter};
-
+    --color-icons: ${({ theme }) => theme.colors.iconsColor};
     font-size: 60%;
   }
 

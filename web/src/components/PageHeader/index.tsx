@@ -13,9 +13,10 @@ import { Header, TopBar, HeaderContent } from './styles';
 
 interface IProps {
   title: string;
+  description?: string;
 }
 
-const PageHeader: FC<IProps> = ({ title, children }) => {
+const PageHeader: FC<IProps> = ({ title, description, children }) => {
   const { title: themeTitle } = useContext(ThemeContext);
 
   const { toggleTheme } = useTheme();
@@ -40,6 +41,7 @@ const PageHeader: FC<IProps> = ({ title, children }) => {
 
       <HeaderContent>
         <strong>{title}</strong>
+        {description && <p>{description}</p>}
 
         {children}
       </HeaderContent>

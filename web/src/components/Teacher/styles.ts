@@ -59,7 +59,7 @@ export const Container = styled.article`
       }
     }
 
-    > button {
+    > a {
       width: 20rem;
       height: 5.6rem;
       background: var(--color-secundary);
@@ -97,7 +97,7 @@ export const Container = styled.article`
         }
       }
 
-      > button {
+      > a {
         width: 24.5rem;
         font-size: 1.6rem;
         justify-content: center;

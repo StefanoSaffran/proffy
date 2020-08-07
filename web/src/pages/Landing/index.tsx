@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Container from '../../components/Container';
@@ -9,6 +9,8 @@ import landingLogo from '../../assets/landing.svg';
 import studyIcon from '../../assets/icons/study.svg';
 import giveClassesIcon from '../../assets/icons/give-classes.svg';
 import purpleHeartIcon from '../../assets/icons/purple-heart.svg';
+
+import api from '../../services/api';
 
 import {
   Wrapper,
@@ -21,6 +23,12 @@ import {
 } from './styles';
 
 const Landing: React.FC = () => {
+  const [totalConnections, setTotalConnections] = useState(0);
+
+  useEffect(() => {
+    api.get('connections').then(({ data }) => setTotalConnections(data));
+  }, []);
+
   return (
     <Wrapper>
       <Header>
@@ -41,7 +49,7 @@ const Landing: React.FC = () => {
               <strong>O que deseja fazer?</strong>
             </p>
             <span>
-              Total de 200 conexões já realizadas
+              Total de {totalConnections} conexões já realizadas
               <img src={purpleHeartIcon} alt="Purple Heart" />
             </span>
           </Connections>

@@ -2,7 +2,7 @@ import styled from 'styled-components/native';
 import { BorderlessButton } from 'react-native-gesture-handler';
 
 export const Container = styled.View`
-  padding: 40px;
+  padding: 35px 30px;
   background-color: #8257e5;
 `;
 
@@ -21,4 +21,10 @@ export const Title = styled.Text`
   line-height: 32px;
   max-width: 160px;
   margin: 40px 0;
+`;
+
+export const HeaderTitleContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;

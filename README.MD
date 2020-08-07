@@ -20,9 +20,14 @@
 <p align="center">
   <a href="#computer-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#rocket-built-with">Built with</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-how-to-run">How to run</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-license">License</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#mailbox_with_mail-get-in-touch">Get in touch</a>
-  </p>
+</p>
+
+<p align="center">
+  <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fgithub.com%2FStefanoSaffran%2Fproffy%2Fblob%2Fmaster%2FInsomnia_2020-08-05.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
+</p>
 
   <p align="center">🚧 Under Construction 🚧</p>
 

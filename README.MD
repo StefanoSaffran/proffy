@@ -35,7 +35,7 @@
 This project was developed with the following technologies:
 
 <details>
-  <summary>Backend</summary>
+  <summary>Server</summary>
 
 -   [Node.js](https://nodejs.org/)
 -   [Express](https://expressjs.com/)
@@ -45,6 +45,42 @@ This project was developed with the following technologies:
 -   [Tsyringe](https://github.com/microsoft/tsyringe)
 -   [uuidv4](https://www.npmjs.com/package/uuidv4)
 -   [Cors](https://www.npmjs.com/package/cors)
+-   [ESLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [VS Code](https://code.visualstudio.com/)
+
+</details>
+
+<details>
+  <summary>Web</summary>
+
+-   [React](https://pt-br.reactjs.org/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [@unform](https://unform.dev/)
+-   [Styled Components](https://styled-components.com/)
+-   [Context API](https://reactjs.org/docs/context.html)
+-   [React-toggle](https://github.com/aaronshaf/react-toggle)
+-   [Axios](https://www.npmjs.com/package/axios)
+-   [React Icons](https://react-icons.netlify.com/#/)
+-   [Yup](https://github.com/jquense/yup)
+-   [ESLint](https://eslint.org/)
+-   [Prettier](https://prettier.io/)
+-   [VS Code](https://code.visualstudio.com/)
+
+</details>
+
+<details>
+  <summary>Mobile</summary>
+
+-   [React](https://pt-br.reactjs.org/)
+-   [React Native](https://reactnative.dev/)
+-   [Expo](https://expo.io/learn)
+-   [Styled Components](https://styled-components.com/)
+-   [Typescript](https://www.typescriptlang.org/)
+-   [React Navigation](https://reactnavigation.org/)
+-   [Axios](https://www.npmjs.com/package/axios)
+-   [Expo Google Fonts](https://github.com/expo/google-fonts)
+-   [React Native Appearance](https://github.com/expo/react-native-appearance)
 -   [ESLint](https://eslint.org/)
 -   [Prettier](https://prettier.io/)
 -   [VS Code](https://code.visualstudio.com/)
@@ -79,8 +115,8 @@ Now clone the repository and install the dependencies.
 # to clone the repository
 $ git clone https://github.com/StefanoSaffran/proffy.git
 
-# go into the backend folder
-$ cd proffy/backend
+# go into the server folder
+$ cd proffy/server
 
 #install the backend dependencies
 $ yarn
@@ -99,13 +135,30 @@ $ yarn dev:server
 ### Frontend
 
 ```bash
-# in another tab of the terminal install the frontend dependencies and run it 
-$ cd frontend
+# in another tab of the terminal install the web dependencies and run it 
+$ cd web
 $ yarn
 $ yarn start
 ```
 
 ### Mobile
+
+The Application was developed using Expo. It is a free and open source toolchain built around React Native to facilitate the process of running and testing applications. [Click here](https://expo.io/learn) to get start with Expo.
+
+```bash
+# install the dependencies
+cd mobile
+yarn
+```
+
+```bash
+# to run the app
+yarn start
+```
+
+Expo will open a page in your browser, scan the QRcode on the page and wait for the app to load.
+
+> The Application was developed and tested on Iphone 6s and Android Studio Emulator.
 
 ## :memo: License
 

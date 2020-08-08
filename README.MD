@@ -29,11 +29,15 @@
   <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fgithub.com%2FStefanoSaffran%2Fproffy%2Fblob%2Fmaster%2FInsomnia_2020-08-05.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
 </p>
 
-  <p align="center">🚧 Under Construction 🚧</p>
+  <h2 align="center">🚧 Under Construction 🚧</h2>
 
 ## :computer: Project 
 
  Proffy is an application that aims helping to bring together people who need help in some subject with those who like to teach.
+
+ <p align="center">
+  <img src="https://res.cloudinary.com/stefanosaffran/image/upload/v1596876802/Omnistack/b0urvevadbrrf8kgiptx.gif" >
+</p>
 
  ## :rocket: Built with
 
@@ -65,6 +69,7 @@ This project was developed with the following technologies:
 -   [Styled Components](https://styled-components.com/)
 -   [Context API](https://reactjs.org/docs/context.html)
 -   [React-toggle](https://github.com/aaronshaf/react-toggle)
+-   [React-toastify](https://github.com/fkhadra/react-toastify)
 -   [Axios](https://www.npmjs.com/package/axios)
 -   [React Icons](https://react-icons.netlify.com/#/)
 -   [Yup](https://github.com/jquense/yup)
@@ -155,6 +160,16 @@ The Application was developed using Expo. It is a free and open source toolchain
 cd mobile
 yarn
 ```
+
+In order to run the application on your device, you need to change the ip config.
+
+[api.ts](https://github.com/StefanoSaffran/proffy/blob/master/mobile/src/services/api.ts)
+```javascript
+  baseURL: 'http://192.168.0.185:3333',
+```
+replace 192.168.0.185 with your machine's ip.
+
+Now with everything on place, run the application.
 
 ```bash
 # to run the app

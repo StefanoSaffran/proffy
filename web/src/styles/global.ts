@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 import 'react-toggle/style.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
   :root {

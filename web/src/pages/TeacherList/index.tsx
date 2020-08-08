@@ -60,7 +60,7 @@ const TeacherList: FC = () => {
               { value: 'Artes', label: 'Artes' },
               { value: 'Biologia', label: 'Biologia' },
               { value: 'Ciências', label: 'Ci' },
-              { value: 'Educação física', label: 'Artes' },
+              { value: 'Educação física', label: 'Educação física' },
               { value: 'Física', label: 'Física' },
               { value: 'Geografia', label: 'Geografia' },
               { value: 'História', label: 'História' },

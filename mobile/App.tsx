@@ -14,6 +14,7 @@ import {
   Poppins_600SemiBold,
   useFonts,
 } from '@expo-google-fonts/poppins';
+import AppProvider from './src/hooks';
 
 import AppStack from './src/routes/AppStack';
 
@@ -28,10 +29,12 @@ const App: React.FC = () => {
   if (!fontsLoaded) return <AppLoading />;
 
   return (
-    <NavigationContainer>
-      <AppStack />
-      <StatusBar style="light" backgroundColor="transparent" translucent />
-    </NavigationContainer>
+    <AppProvider>
+      <NavigationContainer>
+        <AppStack />
+        <StatusBar style="light" backgroundColor="transparent" translucent />
+      </NavigationContainer>
+    </AppProvider>
   );
 };
 

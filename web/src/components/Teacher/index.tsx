@@ -37,7 +37,7 @@ const Teacher: FC<IProps> = ({ teacher }) => {
         </p>
         <a
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           onClick={handleCreateNewConnection}
           href={`https://wa.me/${teacher.user.whatsapp}`}
         >

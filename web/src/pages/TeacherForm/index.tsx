@@ -1,5 +1,6 @@
 import React, { FC, useState, useCallback, useRef } from 'react';
 import { useHistory } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 import { FormHandles, Scope } from '@unform/core';
 import { Form } from '@unform/web';
@@ -73,7 +74,14 @@ const TeacherForm: FC = () => {
 
         await api.post('classes', data);
 
-        alert('Cadastro realizado com sucesso');
+        toast('Cadastro realizado com sucesso!', {
+          position: 'top-right',
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
 
         history.push('/');
       } catch (err) {

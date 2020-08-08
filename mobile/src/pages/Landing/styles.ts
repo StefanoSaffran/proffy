@@ -5,7 +5,7 @@ export const Container = styled.View`
   flex: 1;
   justify-content: center;
 
-  background-color: #8257e5;
+  background-color: ${({ theme }) => theme.colors.primary};
   padding: 40px;
 `;
 

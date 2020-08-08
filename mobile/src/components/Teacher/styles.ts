@@ -6,7 +6,7 @@ interface IFavoriteButtonProps {
 }
 
 export const Container = styled.View`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.cardBackground};
   border: 1px solid #e6e6f0;
   border-radius: 8px;
   margin-bottom: 16px;
@@ -32,12 +32,12 @@ export const Avatar = styled.Image`
 
 export const Name = styled.Text`
   font-family: 'Archivo_700Bold';
-  color: #32264d;
+  color: ${({ theme }) => theme.colors.colorTextTitle};
   font-size: 20px;
 `;
 export const Subject = styled.Text`
   font-family: 'Poppins_400Regular';
-  color: #6a6180;
+  color: ${({ theme }) => theme.colors.colorTextBase};
   font-size: 12px;
   margin-top: 4px;
 `;
@@ -47,25 +47,25 @@ export const Bio = styled.Text`
   font-size: 14px;
   line-height: 24px;
   margin: 0 24px;
-  color: #6a6180;
+  color: ${({ theme }) => theme.colors.colorTextBase};
 `;
 
 export const Footer = styled.View`
   margin-top: 16px;
-  background-color: #fafafc;
+  background-color: ${({ theme }) => theme.colors.footer};
   padding: 24px;
   align-items: center;
 `;
 
 export const Price = styled.Text`
   font-family: 'Poppins_400Regular';
-  color: #6a6180;
+  color: ${({ theme }) => theme.colors.colorTextBase};
   font-size: 14px;
 `;
 
 export const PriceValue = styled.Text`
   font-family: 'Archivo_700Bold';
-  color: #8257e5;
+  color: ${({ theme }) => theme.colors.primary};
   font-size: 16px;
 `;
 
@@ -75,7 +75,7 @@ export const ButtonsContainer = styled.View`
 `;
 
 export const FavoriteButton = styled(Button)<IFavoriteButtonProps>`
-  background-color: #8257e5;
+  background-color: ${({ theme }) => theme.colors.primary};
   width: 56px;
   height: 56px;
   align-items: center;
@@ -99,7 +99,7 @@ export const ContactButton = styled(Button)`
 `;
 
 export const ContactButtonText = styled.Text`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.buttonColor};
   font-family: 'Archivo_700Bold';
   font-size: 16px;
   margin-left: 16px;

@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 
 export const Container = styled.View`
   flex: 1;
-  background-color: #f0f0f7;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const TeacherScrollList = styled(ScrollView)`
@@ -31,12 +31,13 @@ export const Label = styled.Text`
 `;
 
 export const Input = styled.TextInput`
-  background-color: #fff;
+  background-color: ${({ theme }) => theme.colors.inputBackground};
   height: 54px;
   border-radius: 8px;
   padding: 0 16px;
   justify-content: center;
   margin: 4px 0 16px;
+  color: ${({ theme }) => theme.colors.text};
 `;
 
 export const SubmitButton = styled(Button)`

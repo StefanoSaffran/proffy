@@ -1,9 +1,10 @@
 import styled from 'styled-components/native';
 import { BorderlessButton } from 'react-native-gesture-handler';
+import { Feather as Icon } from '@expo/vector-icons';
 
 export const Container = styled.View`
   padding: 35px 30px;
-  background-color: #8257e5;
+  background-color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const TopBar = styled.View`
@@ -28,3 +29,15 @@ export const HeaderTitleContainer = styled.View`
   align-items: center;
   justify-content: space-between;
 `;
+
+export const ToggleThemeButton = styled.TouchableOpacity`
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 25px;
+`;
+
+export const ThemeIcon = styled(Icon).attrs({
+  size: 30,
+  color: '#feb72b',
+})``;
